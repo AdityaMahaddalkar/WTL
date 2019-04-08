@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>USD to INR</legend>
+      <div class="" ng-app="app1" ng-controller="ctrl1">
+        USD : <input type="number" name="usd" value="0" ng-model="usd1"><br>
+        INR : {{ inr1 }}<br>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>INR to USD</legend>
+      <div class="" ng-app="app2" ng-controller="ctrl2">
+        INR : <input type="number" name="inr" value="0" ng-model="inr2"><br>
+        USD : {{ usd2 }} <br>
+      </div>
+    </fieldset>
+
+    <script type="text/javascript">
+      var app = angular.module("app1", []);
+      app.controller("ctrl1", function($scope){
+        $scope.inr1 = Number($scope.usd1)*60;
+      });
+      var app2 = angular.module("app2", []);
+      app2.controller("ctrl2", function($scope){
+        $scope.usd2 = Number($scope.inr2)/60;
+      });
+    </script>
+  </body>
+</html>

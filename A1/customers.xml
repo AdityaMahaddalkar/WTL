@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customers>
+  <customer>
+    <name>Adi</name>
+    <age>21</age>
+    <city>Pune</city>
+    <language>cpp</language>
+    <language>java</language>
+  </customer>
+</customers>
