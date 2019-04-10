@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		
+		<bean id="student1" class="main.Student">
+			<property name="name" value="Aditya Mahaddalkar"></property>
+			<property name="rollNo" value="3149"></property>
+			<property name="branch" value="C.E."></property>
+		</bean>
+		
+		<bean id="student2" class="main.Student">
+			<constructor-arg value="Truth always hurt"></constructor-arg>
+			<constructor-arg value="8"></constructor-arg>
+			<constructor-arg value="If Ned Stark had believed the Nights Watch deserter, GOT would have been only 2 seasons long"></constructor-arg>
+		</bean>
+		
+</beans>
